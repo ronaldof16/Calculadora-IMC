@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(118, 118, 211);
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(52, 20, 82);
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+    row-gap: 15px;
+    border-radius: 10px;
+}
+
+#titulo {
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.titulo-campos {
+    color: white;
+}
+
+.campos {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#btn {
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
