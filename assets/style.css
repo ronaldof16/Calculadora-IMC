@@ -58,3 +58,14 @@ form {
     color: white;
     border-radius: 5px;
 }
+
+footer p {
+    text-align: center;
+    font-size: 13px;
+    color: rgb(52, 20, 82);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(52, 20, 82);
+}
