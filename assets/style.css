@@ -54,12 +54,23 @@ form {
     border-radius: 5px;
 }
 
-#btn {
+#btn-calcular, #btn-limpar  {
     background-color: blue;
     padding: 13px;
     color: white;
     border-radius: 5px;
     font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#btn-limpar {
+    background-color: rgb(202, 23, 23);
+}
+
+#btn-calcular:hover, #btn-limpar:hover  {
+    opacity: 1;
 }
 
 footer p {
