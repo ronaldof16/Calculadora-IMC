@@ -29,6 +29,7 @@ form {
     padding: 20px;
     row-gap: 20px;
     border-radius: 10px;
+    display: none;
 }
 
 #titulo {
@@ -63,6 +64,7 @@ form {
     opacity: 0.8;
     cursor: pointer;
     text-transform: uppercase;
+    
 }
 
 #btn-limpar {
