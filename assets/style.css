@@ -2,7 +2,7 @@
 
 * {
     padding: 0;
-    border: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -74,6 +74,50 @@ form {
 #btn-calcular:hover, #btn-limpar:hover  {
     opacity: 1;
 }
+
+.resultado {
+    text-align: center;
+    background-color: rgb(52, 20, 82);
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#imc-number {
+    font-size: 2.4rem;
+    margin-bottom: 0.6rem;
+}
+
+#imc-info {
+    font-size: 1.4rem;
+}
+
+.resultado h3 {
+    margin-top: 1rem;
+}
+
+#imc-table {
+    margin: 1.5rem 0;
+    font-size: 0.8rem;
+}
+
+.table-header, .table-data {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid red;
+}
+
+.table-header h4, .table-data p {
+    flex: 1;
+}
+
+.table-header h4:nth-child(3), .table-data p:nth-child(3) {
+    max-width: 80px;
+}
+
 
 footer p {
     text-align: center;
