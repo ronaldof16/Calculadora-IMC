@@ -42,6 +42,13 @@ let altura = document.querySelector('#altura');
 let btnCalcular = document.querySelector('#btn-calcular');
 let btnLimpar = document.querySelector('#btn-limpar');
 
+let imcNumber = document.querySelector('#imc-number span');
+let imcInfo = document.querySelector('#imc-info span');
+let backBtn = document.querySelector('#back-btn');
+
+let formulario = document.querySelector('form');
+let resultado = document.querySelector('#resultado');
+
 function createTable(data) {
     data.forEach((item) => {
         const div = document.createElement('div');
@@ -63,13 +70,18 @@ function createTable(data) {
 };
 
 function cleanInputs() {
-    peso.value = " ";
-    altura.value = " ";
+    peso.value = "";
+    altura.value = "";
 }
 
 function calcImc(valorPeso, valorAltura) {
     let imc = (valorPeso / (valorAltura* valorAltura)).toFixed(1);
     return imc;
+}
+
+function exibir() {
+    formulario.classList.toggle("hide");
+    resultado.classList.toggle("hide");
 }
 
 
@@ -83,7 +95,22 @@ btnCalcular.addEventListener("click", (e) => {
 
     let imc = calcImc(valorPeso, valorAltura);
 
-    console.log(imc);
+    let info;
+
+    data.forEach((item) => {
+        if(imc >= item.min && imc <= item.max) {
+            info = item.info;
+        }
+    });
+
+    
+    if(!info) return;
+
+    imc.innerText = imc;
+    imcInfo.innerText = info;
+
+    exibir();
+    
 });
 
 btnLimpar.addEventListener("click", (e) => {
