@@ -62,7 +62,20 @@ function createTable(data) {
     });
 };
 
+function cleanInputs() {
+    peso.value = " ";
+    altura.value = " ";
+}
+
+
 createTable(data);
+
+
+btnLimpar.addEventListener("click", (e) => {
+    e.preventDefault();
+    cleanInputs();
+});
+
 
 
 
