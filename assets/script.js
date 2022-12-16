@@ -67,9 +67,24 @@ function cleanInputs() {
     altura.value = " ";
 }
 
+function calcImc(valorPeso, valorAltura) {
+    let imc = (valorPeso / (valorAltura* valorAltura)).toFixed(1);
+    return imc;
+}
+
 
 createTable(data);
 
+btnCalcular.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    let valorPeso = peso.value;
+    let valorAltura = altura.value;
+
+    let imc = calcImc(valorPeso, valorAltura);
+
+    console.log(imc);
+});
 
 btnLimpar.addEventListener("click", (e) => {
     e.preventDefault();
@@ -79,12 +94,4 @@ btnLimpar.addEventListener("click", (e) => {
 
 
 
-function resultado() {
-    if(imc > 30) {
-        console.log('parabéns!')
-    } else {
-        console.log('obrigado!')
-    }
-}
 
-btn.addEventListener('click', resultado())
