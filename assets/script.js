@@ -106,7 +106,7 @@ btnCalcular.addEventListener("click", (e) => {
     
     if(!info) return;
 
-    imc.innerText = imc;
+    imcNumber.innerText = imc;
     imcInfo.innerText = info;
 
     exibir();

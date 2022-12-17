@@ -19,6 +19,10 @@ main {
     height: 90vh;
 }
 
+.hide {
+    display: none !important;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -29,7 +33,6 @@ form {
     padding: 20px;
     row-gap: 20px;
     border-radius: 10px;
-    
 }
 
 #titulo {
@@ -86,20 +89,19 @@ form {
     flex-direction: column;
     border-radius: 10px;
     width: 350px;
-    display: none;
 }
 
 #imc-number {
     font-size: 2.4rem;
-    margin-bottom: 0.6rem;
 }
 
 #imc-info {
     font-size: 1.4rem;
+    margin-bottom: 1rem;
 }
 
 .resultado h3 {
-    margin-top: 1rem;
+    margin: 1rem;
 }
 
 #imc-table {
