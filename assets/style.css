@@ -88,7 +88,7 @@ form {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    width: 350px;
+    width: 370px;
 }
 
 #imc-number {
@@ -96,7 +96,7 @@ form {
 }
 
 #imc-info {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
@@ -114,7 +114,7 @@ form {
     justify-content: center;
     margin-bottom: 0.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid rgb(194, 86, 86);
 }
 
 .table-header h4, .table-data p {
@@ -141,16 +141,16 @@ form {
     opacity: 1;
 }
 
-.good {
+.verde {
     color: #12db34;
 }
-.low {
+.amarelo {
     color: #dbce12;
 }
-.medium {
+.laranja {
     color: #db6212;
 }
-.high {
+.vermelho {
     color: #db1912;
 }
 

@@ -72,6 +72,8 @@ function createTable(data) {
 function cleanInputs() {
     peso.value = "";
     altura.value = "";
+    imcNumber.classList = "";
+    imcInfo.classList = "";
 }
 
 function calcImc(valorPeso, valorAltura) {
@@ -109,6 +111,29 @@ btnCalcular.addEventListener("click", (e) => {
     imcNumber.innerText = imc;
     imcInfo.innerText = info;
 
+    switch(info) {
+        case "Magreza":
+            imcNumber.classList.add("amarelo");
+            imcInfo.classList.add("amarelo");
+            break;
+        case "Normal":
+            imcNumber.classList.add("verde");
+            imcInfo.classList.add("verde");
+            break;
+        case "Sobrepeso":
+            imcNumber.classList.add("amarelo");
+            imcInfo.classList.add("amarelo");
+            break;
+        case "Obesidade":
+            imcNumber.classList.add("laranja");
+            imcInfo.classList.add("laranja");
+            break;
+        case "Obesidade grave":
+            imcNumber.classList.add("vermelho");
+            imcInfo.classList.add("vermelho");
+            break;
+    }
+
     exibir();
     
 });
@@ -118,7 +143,10 @@ btnLimpar.addEventListener("click", (e) => {
     cleanInputs();
 });
 
-
+backBtn.addEventListener("click", () => {
+    cleanInputs();
+    exibir();
+})
 
 
 
