@@ -36,7 +36,7 @@ const data = [
     },
 ];
 
-const tabela = document.querySelector('#imc-table');
+const informacoes = document.querySelector('#informacoes');
 let peso = document.querySelector('#peso');
 let altura = document.querySelector('#altura');
 let btnCalcular = document.querySelector('#btn-calcular');
@@ -44,7 +44,7 @@ let btnLimpar = document.querySelector('#btn-limpar');
 
 let imcNumber = document.querySelector('#imc-number span');
 let imcInfo = document.querySelector('#imc-info span');
-let backBtn = document.querySelector('#back-btn');
+let btnVoltar = document.querySelector('#btn-voltar');
 
 let formulario = document.querySelector('form');
 let resultado = document.querySelector('#resultado');
@@ -65,11 +65,11 @@ function createTable(data) {
         div.appendChild(info);
         div.appendChild(obesity);
 
-        tabela.appendChild(div);
+        informacoes.appendChild(div);
     });
 };
 
-function cleanInputs() {
+function limparInputs() {
     peso.value = "";
     altura.value = "";
     imcNumber.classList = "";
@@ -140,13 +140,13 @@ btnCalcular.addEventListener("click", (e) => {
 
 btnLimpar.addEventListener("click", (e) => {
     e.preventDefault();
-    cleanInputs();
+    limparInputs();
 });
 
-backBtn.addEventListener("click", () => {
-    cleanInputs();
+btnVoltar.addEventListener("click", () => {
+    limparInputs();
     exibir();
-})
+});
 
 
 

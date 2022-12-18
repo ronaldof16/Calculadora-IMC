@@ -108,7 +108,7 @@ form {
     margin: 1rem;
 }
 
-#imc-table {
+#informacoes {
     margin: 1.5rem 0;
     font-size: 0.8rem;
 }
@@ -129,7 +129,7 @@ form {
     max-width: 80px;
 }
 
-#back-btn {
+#btn-voltar {
     background-color: blue;
     padding: 13px;
     color: white;
@@ -141,7 +141,7 @@ form {
     border: none;  
 }
 
-#back-btn:hover {
+#btn-voltar:hover {
     opacity: 1;
 }
 
