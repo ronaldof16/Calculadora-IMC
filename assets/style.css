@@ -16,7 +16,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 94vh;
+    min-height: 97vh;
 }
 
 .hide {
@@ -73,7 +73,8 @@ form {
     opacity: 0.8;
     cursor: pointer;
     text-transform: uppercase;
-    border: none;   
+    border: none;
+    transition: 300ms;   
 }
 
 #btn-limpar {
@@ -82,6 +83,7 @@ form {
 
 #btn-calcular:hover, #btn-limpar:hover  {
     opacity: 1;
+    transform: scale(1.05);
 }
 
 #resultado {
@@ -96,7 +98,7 @@ form {
 }
 
 #imc-number {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
 }
 
 #imc-info {
@@ -143,6 +145,7 @@ form {
 
 #btn-voltar:hover {
     opacity: 1;
+    transform: scale(1.05);
 }
 
 .verde {
@@ -162,7 +165,6 @@ footer p {
     text-align: center;
     font-size: 13px;
     color: rgb(7, 7, 7);
-    margin-bottom: 20px;
 }
 
 footer a {
