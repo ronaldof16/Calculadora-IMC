@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(118, 118, 211);
+    background: linear-gradient(to top, rgb(160, 139, 216), rgb(119, 39, 156));
     font-family: 'Poppins', sans-serif;
 }
 
@@ -16,7 +16,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    min-height: 94vh;
 }
 
 .hide {
@@ -162,6 +162,7 @@ footer p {
     text-align: center;
     font-size: 13px;
     color: rgb(7, 7, 7);
+    margin-bottom: 20px;
 }
 
 footer a {
