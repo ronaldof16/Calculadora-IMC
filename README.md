@@ -3,7 +3,7 @@ Calculadora para calcular o ídice de massa corporal (IMC)
 
 Link da página: <>
 
-![]()
+![design do projeto](assets/design-calculadora-imc.png)
 
 ## Sobre
 
